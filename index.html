@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support and contact for Fluo: Learn Vocabulary" />
+  <title>Fluo — Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --primary-dark: #4f46e5;
+      --bg: #f4f3ff;
+      --bg-pattern: #e8e6ff;
+      --surface: #ffffff;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --border: #e8e8f0;
+      --shadow: 0 22px 48px rgba(76, 64, 180, 0.12);
+      --radius: 20px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f1a;
+        --bg-pattern: #1a1a2e;
+        --surface: #1a1a2e;
+        --text: #f0f0ff;
+        --text-muted: #a0a0c0;
+        --border: #2d2d44;
+        --shadow: 0 24px 56px rgba(0, 0, 0, 0.45);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 100% -20%, rgba(108, 99, 255, 0.18), transparent),
+        radial-gradient(ellipse 80% 60% at 0% 100%, rgba(255, 101, 132, 0.08), transparent);
+    }
+    .wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .badge svg { opacity: 0.9; }
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.125rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0 0 12px;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin: 0 0 32px;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 14px;
+    }
+    .card p { margin: 0 0 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+      color: var(--text-muted);
+    }
+    ul li { margin-bottom: 6px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+      padding: 14px 22px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(108, 99, 255, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(108, 99, 255, 0.42);
+    }
+    .btn:active { transform: translateY(0); }
+    footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+      </svg>
+      Official support
+    </div>
+    <h1>Fluo: Learn Vocabulary</h1>
+    <p class="lead">
+      Thanks for using Fluo. If something isn’t working or you have feedback, we’re here to help.
+    </p>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p style="color: var(--text-muted); margin-bottom: 16px;">
+        Send us an email — please include a short description, your device &amp; OS version if relevant, and screenshots if helpful.
+      </p>
+      <a class="btn" href="mailto:batu.develops@gmail.com?subject=Fluo%20Support">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16v12H4V6zm0 0l8 6 8-6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Email support
+      </a>
+      <p style="margin-top: 18px; font-size: 14px; color: var(--text-muted);">
+        <strong style="color: var(--text);">batu.develops@gmail.com</strong>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Privacy &amp; terms</h2>
+      <p>
+        Privacy Policy and Terms of Use are available <strong>inside the app</strong> (Settings or legal sections, depending on your version).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Subscriptions</h2>
+      <p>
+        <strong>Fluo Premium</strong> is an optional auto-renewable subscription. Manage or cancel it in your
+        <strong>Apple ID</strong> subscription settings. If you reinstall or change devices, use
+        <strong>Restore purchase</strong> in the app’s <strong>Settings</strong>.
+      </p>
+    </div>
+
+    <footer>
+      This page is provided for App Store support requirements.
+    </footer>
+  </div>
+</body>
+</html>
